@@ -1,0 +1,6 @@
+{
+  "name": "KubeGuard - Container & Kubernetes Security Auditor",
+  "description": "Static security auditing tool for Kubernetes manifests and Dockerfiles, featuring vulnerability detection, risk scoring, and actionable remediation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

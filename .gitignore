@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C/Rust extensions & builds
+build/
+dist/
+dist-ssr/
+*.egg-info/
+*.egg
+
+# Virtual environments & local dependencies
+.venv/
+venv/
+ENV/
+env/
+python_libs/
+node_modules/
+
+# Node / Vite build artifacts
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun.lock*
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# OS-generated files (macOS / Windows / Linux)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Local audit generated files
+audit-report.html
+*.log

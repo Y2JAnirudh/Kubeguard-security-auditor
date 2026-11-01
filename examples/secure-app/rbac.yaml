@@ -1,0 +1,28 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: payment-reader
+  namespace: production
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - configmaps
+    verbs:
+      - get
+      - list
+      - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: payment-reader-binding
+  namespace: production
+subjects:
+  - kind: ServiceAccount
+    name: payment-api-sa
+    namespace: production
+roleRef:
+  kind: Role
+  name: payment-reader
+  apiGroup: rbac.authorization.k8s.io
